@@ -1,0 +1,13 @@
+**** Set Up Redux ****
+- cài 1 chương trình về react
+Chú ý : redux là 1 thư viện quản lý js nên bạn có thể sử dụng redux trong các thư viện của react chẳng hạn như anglejs ....nên để kết nối redux với react ta phải cài đặt 1 thư viện khác là react-redux . có 1 bộ công cụ rất hữu iuhs khi dùng redux đó là reduxjs/toolki- sau khi cài chương trình xong thì bắt đầu cài npm install redux react-redux @reduxjs/toolkit
+
+- set up project 
++ Tạo 1 thành phần thứ 2 
+ <Provider> 
+            <App />
+ </Provider>
+mọi thứ nằm bên trong <Provider> đều truy cập đc vào store
+
+
+video hướng dẫn : https://www.youtube.com/watch?v=k68j9xlbHHk
