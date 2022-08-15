@@ -5,10 +5,12 @@ import reportWebVitals from './reportWebVitals';
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux'; // trình cung cấp có chức năng giúp thành phần nào có quyền truy cập vào store
 import useReducer from './features/user';
+import themeReducer from './features/theme';
 // set up redux
 const store = configureStore({
     reducer: {
         user: useReducer,
+        theme: themeReducer,
     },
 });
 
