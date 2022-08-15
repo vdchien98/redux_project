@@ -4,10 +4,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux'; // trình cung cấp có chức năng giúp thành phần nào có quyền truy cập vào store
-
+import useReducer from './features/user';
 // set up redux
 const store = configureStore({
-    reducer: {},
+    reducer: {
+        user: useReducer,
+    },
 });
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
