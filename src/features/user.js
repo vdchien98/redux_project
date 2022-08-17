@@ -5,7 +5,8 @@ export const userSlice = createSlice({
     initialState: { value: initialStateValue },
     reducers: {
         login: (state, action) => {
-            state.value = action.payload;
+            console.log('++++++', action.payload);
+            state.value = action.payload; // payload chính là { name: 'Vdchien98', age: 24, email: 'vudangchien98@gmail.com' }
         },
         logout: (state, action) => {
             state.value = initialStateValue;
